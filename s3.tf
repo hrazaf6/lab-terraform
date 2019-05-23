@@ -3,4 +3,5 @@ resource "aws_s3" "test_s3" {
   acl    = "private"
   tags = "${var.tag}"
   policy = "${var.policy}"
+  lifecycle = "true"
 }
